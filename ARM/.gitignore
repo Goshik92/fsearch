@@ -68,3 +68,4 @@ local.properties
 webtalk
 RemoteSystemsTempFiles
 *.log
+Debug
