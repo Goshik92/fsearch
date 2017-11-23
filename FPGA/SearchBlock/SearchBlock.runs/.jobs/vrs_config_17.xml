@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="haystack_mem_synth_1" LaunchDir="E:/Dropbox/Dropbox/Projects/Complex/ZedBoard/fsearch/FPGA/SearchBlock/SearchBlock.runs/haystack_mem_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="needle_mem_synth_1" LaunchDir="E:/Dropbox/Dropbox/Projects/Complex/ZedBoard/fsearch/FPGA/SearchBlock/SearchBlock.runs/needle_mem_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="E:/Dropbox/Dropbox/Projects/Complex/ZedBoard/fsearch/FPGA/SearchBlock/SearchBlock.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="haystack_mem_synth_1"/>
+		<Parent Id="needle_mem_synth_1"/>
+	</Run>
+</Runs>
+

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="axi_haystack_mem_ctrl_synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1421275299">
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/axi_haystack_mem_ctrl_synth_1/constrs_in.xml"/>
+  <File Type="RDS-DCP" Name="axi_haystack_mem_ctrl.dcp"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/axi_haystack_mem_ctrl_synth_1/sources.xml"/>
+  <File Type="RDS-UTIL-PB" Name="axi_haystack_mem_ctrl_utilization_synth.pb"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/axi_haystack_mem_ctrl_synth_1/axi_haystack_mem_ctrl_synth_1.psg"/>
+  <File Type="PA-TCL" Name="axi_haystack_mem_ctrl.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="axi_haystack_mem_ctrl_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="axi_haystack_mem_ctrl.vds"/>
+  <File Type="RDS-UTIL" Name="axi_haystack_mem_ctrl_utilization_synth.rpt"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="axi_haystack_mem_ctrl_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="axi_haystack_mem_ctrl_timing_summary_synth.pb"/>
+  <File Type="VDS-HWDEF" Name="axi_haystack_mem_ctrl.hwdef"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/axi_haystack_mem_ctrl">
+    <File Path="$PSRCDIR/sources_1/ip/axi_haystack_mem_ctrl/axi_haystack_mem_ctrl.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="axi_haystack_mem_ctrl"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/axi_haystack_mem_ctrl">
+    <File Path="$PSRCDIR/sources_1/ip/axi_haystack_mem_ctrl/axi_haystack_mem_ctrl.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="axi_haystack_mem_ctrl"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2014"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

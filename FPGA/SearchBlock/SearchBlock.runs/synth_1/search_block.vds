@@ -1,0 +1,560 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Thu Jan 15 05:11:14 2015
+# Process ID: 4028
+# Log file: E:/Dropbox/Dropbox/Projects/Complex/ZedBoard/fsearch/FPGA/SearchBlock/SearchBlock.runs/synth_1/search_block.vds
+# Journal file: E:/Dropbox/Dropbox/Projects/Complex/ZedBoard/fsearch/FPGA/SearchBlock/SearchBlock.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source search_block.tcl
+# set_param gui.test TreeTableDev
+# debug::add_scope template.lib 1
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# create_project -in_memory -part xc7z020clg484-1
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:0.9 available at E:/Xilinx/Vivado/2014.4/data/boards/board_parts/zynq/zc706/0.9/board_part.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.0 available at E:/Xilinx/Vivado/2014.4/data/boards/board_parts/zynq/zc706/1.0/board_part.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.1 available at E:/Xilinx/Vivado/2014.4/data/boards/board_parts/zynq/zc706/1.1/board_part.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_param synth.vivado.isSynthRun true
+# set_property webtalk.parent_dir E:/Dropbox/Dropbox/Projects/Complex/ZedBoard/fsearch/FPGA/SearchBlock/SearchBlock.cache/wt [current_project]
+# set_property parent.project_path E:/Dropbox/Dropbox/Projects/Complex/ZedBoard/fsearch/FPGA/SearchBlock/SearchBlock.xpr [current_project]
+# set_property default_lib xil_defaultlib [current_project]
+# set_property target_language Verilog [current_project]
+# set_property board_part em.avnet.com:zed:part0:1.2 [current_project]
+# set_property ip_repo_paths {
+#   E:/Dropbox/Dropbox/Projects/Complex/ZedBoard/fsearch/FPGA/ip_repo/myip_1.0
+#   E:/Dropbox/Dropbox/Projects/Complex/ZedBoard/fsearch/FPGA/SearchBlock/SearchBlock.srcs/sources_1
+# } [current_project]
+# add_files -quiet E:/Dropbox/Dropbox/Projects/Complex/ZedBoard/fsearch/FPGA/SearchBlock/SearchBlock.runs/haystack_mem_synth_1/haystack_mem.dcp
+# set_property used_in_implementation false [get_files E:/Dropbox/Dropbox/Projects/Complex/ZedBoard/fsearch/FPGA/SearchBlock/SearchBlock.runs/haystack_mem_synth_1/haystack_mem.dcp]
+# add_files -quiet E:/Dropbox/Dropbox/Projects/Complex/ZedBoard/fsearch/FPGA/SearchBlock/SearchBlock.runs/needle_mem_synth_1/needle_mem.dcp
+# set_property used_in_implementation false [get_files E:/Dropbox/Dropbox/Projects/Complex/ZedBoard/fsearch/FPGA/SearchBlock/SearchBlock.runs/needle_mem_synth_1/needle_mem.dcp]
+# add_files -quiet E:/Dropbox/Dropbox/Projects/Complex/ZedBoard/fsearch/FPGA/SearchBlock/SearchBlock.runs/axi_haystack_mem_ctrl_synth_1/axi_haystack_mem_ctrl.dcp
+# set_property used_in_implementation false [get_files E:/Dropbox/Dropbox/Projects/Complex/ZedBoard/fsearch/FPGA/SearchBlock/SearchBlock.runs/axi_haystack_mem_ctrl_synth_1/axi_haystack_mem_ctrl.dcp]
+# add_files -quiet E:/Dropbox/Dropbox/Projects/Complex/ZedBoard/fsearch/FPGA/SearchBlock/SearchBlock.runs/axi_needle_mem_ctrl_synth_1/axi_needle_mem_ctrl.dcp
+# set_property used_in_implementation false [get_files E:/Dropbox/Dropbox/Projects/Complex/ZedBoard/fsearch/FPGA/SearchBlock/SearchBlock.runs/axi_needle_mem_ctrl_synth_1/axi_needle_mem_ctrl.dcp]
+# read_verilog -library xil_defaultlib {
+#   E:/Dropbox/Dropbox/Projects/Complex/ZedBoard/fsearch/FPGA/SearchBlock/SearchBlock.srcs/sources_1/control_registers.v
+#   E:/Dropbox/Dropbox/Projects/Complex/ZedBoard/fsearch/FPGA/SearchBlock/SearchBlock.srcs/sources_1/bitap.v
+#   E:/Dropbox/Dropbox/Projects/Complex/ZedBoard/fsearch/FPGA/SearchBlock/SearchBlock.srcs/sources_1/search_block.v
+# }
+# catch { write_hwdef -file search_block.hwdef }
+INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
+# synth_design -top search_block -part xc7z020clg484-1
+Command: synth_design -top search_block -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:24 . Memory (MB): peak = 228.746 ; gain = 71.840
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'search_block' [E:/Dropbox/Dropbox/Projects/Complex/ZedBoard/fsearch/FPGA/SearchBlock/SearchBlock.srcs/sources_1/search_block.v:1]
+	Parameter C_S_AXI_registers_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_registers_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_haystack_ID_WIDTH bound to: 12 - type: integer 
+	Parameter C_S_AXI_haystack_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_haystack_ADDR_WIDTH bound to: 16 - type: integer 
+	Parameter C_S_AXI_haystack_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXI_haystack_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXI_haystack_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXI_haystack_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXI_haystack_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXI_needle_ID_WIDTH bound to: 12 - type: integer 
+	Parameter C_S_AXI_needle_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_needle_ADDR_WIDTH bound to: 12 - type: integer 
+	Parameter C_S_AXI_needle_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXI_needle_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXI_needle_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXI_needle_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXI_needle_BUSER_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'bitap' [E:/Dropbox/Dropbox/Projects/Complex/ZedBoard/fsearch/FPGA/SearchBlock/SearchBlock.srcs/sources_1/bitap.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Dropbox/Dropbox/Projects/Complex/ZedBoard/fsearch/FPGA/SearchBlock/SearchBlock.srcs/sources_1/bitap.v:62]
+INFO: [Synth 8-256] done synthesizing module 'bitap' (1#1) [E:/Dropbox/Dropbox/Projects/Complex/ZedBoard/fsearch/FPGA/SearchBlock/SearchBlock.srcs/sources_1/bitap.v:1]
+INFO: [Synth 8-638] synthesizing module 'control_registers' [E:/Dropbox/Dropbox/Projects/Complex/ZedBoard/fsearch/FPGA/SearchBlock/SearchBlock.srcs/sources_1/control_registers.v:1]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter ADDR_LSB bound to: 2 - type: integer 
+	Parameter OPT_MEM_ADDR_BITS bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'control_registers' (2#1) [E:/Dropbox/Dropbox/Projects/Complex/ZedBoard/fsearch/FPGA/SearchBlock/SearchBlock.srcs/sources_1/control_registers.v:1]
+INFO: [Synth 8-638] synthesizing module 'haystack_mem' [E:/Dropbox/Dropbox/Projects/Complex/ZedBoard/fsearch/FPGA/SearchBlock/SearchBlock.runs/synth_1/.Xil/Vivado-4028-SUPER-PC/realtime/haystack_mem_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'haystack_mem' (3#1) [E:/Dropbox/Dropbox/Projects/Complex/ZedBoard/fsearch/FPGA/SearchBlock/SearchBlock.runs/synth_1/.Xil/Vivado-4028-SUPER-PC/realtime/haystack_mem_stub.v:7]
+INFO: [Synth 8-638] synthesizing module 'needle_mem' [E:/Dropbox/Dropbox/Projects/Complex/ZedBoard/fsearch/FPGA/SearchBlock/SearchBlock.runs/synth_1/.Xil/Vivado-4028-SUPER-PC/realtime/needle_mem_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'needle_mem' (4#1) [E:/Dropbox/Dropbox/Projects/Complex/ZedBoard/fsearch/FPGA/SearchBlock/SearchBlock.runs/synth_1/.Xil/Vivado-4028-SUPER-PC/realtime/needle_mem_stub.v:7]
+INFO: [Synth 8-638] synthesizing module 'axi_haystack_mem_ctrl' [E:/Dropbox/Dropbox/Projects/Complex/ZedBoard/fsearch/FPGA/SearchBlock/SearchBlock.runs/synth_1/.Xil/Vivado-4028-SUPER-PC/realtime/axi_haystack_mem_ctrl_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'axi_haystack_mem_ctrl' (5#1) [E:/Dropbox/Dropbox/Projects/Complex/ZedBoard/fsearch/FPGA/SearchBlock/SearchBlock.runs/synth_1/.Xil/Vivado-4028-SUPER-PC/realtime/axi_haystack_mem_ctrl_stub.v:7]
+WARNING: [Synth 8-350] instance 'axi_haystack_mem_ctrl0' of module 'axi_haystack_mem_ctrl' requires 44 connections, but only 43 given [E:/Dropbox/Dropbox/Projects/Complex/ZedBoard/fsearch/FPGA/SearchBlock/SearchBlock.srcs/sources_1/search_block.v:271]
+INFO: [Synth 8-638] synthesizing module 'axi_needle_mem_ctrl' [E:/Dropbox/Dropbox/Projects/Complex/ZedBoard/fsearch/FPGA/SearchBlock/SearchBlock.runs/synth_1/.Xil/Vivado-4028-SUPER-PC/realtime/axi_needle_mem_ctrl_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'axi_needle_mem_ctrl' (6#1) [E:/Dropbox/Dropbox/Projects/Complex/ZedBoard/fsearch/FPGA/SearchBlock/SearchBlock.runs/synth_1/.Xil/Vivado-4028-SUPER-PC/realtime/axi_needle_mem_ctrl_stub.v:7]
+WARNING: [Synth 8-350] instance 'axi_needle_mem_ctrl0' of module 'axi_needle_mem_ctrl' requires 44 connections, but only 43 given [E:/Dropbox/Dropbox/Projects/Complex/ZedBoard/fsearch/FPGA/SearchBlock/SearchBlock.srcs/sources_1/search_block.v:319]
+WARNING: [Synth 8-3848] Net s_axi_haystack_buser in module/entity search_block does not have driver. [E:/Dropbox/Dropbox/Projects/Complex/ZedBoard/fsearch/FPGA/SearchBlock/SearchBlock.srcs/sources_1/search_block.v:75]
+WARNING: [Synth 8-3848] Net s_axi_haystack_ruser in module/entity search_block does not have driver. [E:/Dropbox/Dropbox/Projects/Complex/ZedBoard/fsearch/FPGA/SearchBlock/SearchBlock.srcs/sources_1/search_block.v:95]
+WARNING: [Synth 8-3848] Net s_axi_needle_buser in module/entity search_block does not have driver. [E:/Dropbox/Dropbox/Projects/Complex/ZedBoard/fsearch/FPGA/SearchBlock/SearchBlock.srcs/sources_1/search_block.v:123]
+WARNING: [Synth 8-3848] Net s_axi_needle_ruser in module/entity search_block does not have driver. [E:/Dropbox/Dropbox/Projects/Complex/ZedBoard/fsearch/FPGA/SearchBlock/SearchBlock.srcs/sources_1/search_block.v:143]
+INFO: [Synth 8-256] done synthesizing module 'search_block' (7#1) [E:/Dropbox/Dropbox/Projects/Complex/ZedBoard/fsearch/FPGA/SearchBlock/SearchBlock.srcs/sources_1/search_block.v:1]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_haystack_buser[0]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_haystack_ruser[0]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_needle_buser[0]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_needle_ruser[0]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_haystack_awqos[3]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_haystack_awqos[2]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_haystack_awqos[1]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_haystack_awqos[0]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_haystack_awregion[3]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_haystack_awregion[2]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_haystack_awregion[1]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_haystack_awregion[0]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_haystack_awuser[0]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_haystack_wuser[0]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_haystack_arqos[3]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_haystack_arqos[2]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_haystack_arqos[1]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_haystack_arqos[0]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_haystack_arregion[3]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_haystack_arregion[2]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_haystack_arregion[1]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_haystack_arregion[0]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_haystack_aruser[0]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_needle_awqos[3]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_needle_awqos[2]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_needle_awqos[1]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_needle_awqos[0]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_needle_awregion[3]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_needle_awregion[2]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_needle_awregion[1]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_needle_awregion[0]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_needle_awuser[0]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_needle_wuser[0]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_needle_arqos[3]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_needle_arqos[2]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_needle_arqos[1]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_needle_arqos[0]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_needle_arregion[3]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_needle_arregion[2]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_needle_arregion[1]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_needle_arregion[0]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_needle_aruser[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:29 . Memory (MB): peak = 262.992 ; gain = 106.086
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:30 . Memory (MB): peak = 262.992 ; gain = 106.086
+---------------------------------------------------------------------------------
+Loading clock regions from E:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/zynq/xc7z020/ClockRegion.xml
+Loading clock buffers from E:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/zynq/xc7z020/ClockBuffers.xml
+Loading clock placement rules from E:/Xilinx/Vivado/2014.4/data/parts/xilinx/zynq/ClockPlacerRules.xml
+Loading package pin functions from E:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/PinFunctions.xml...
+Loading package from E:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/zynq/xc7z020/clg484/Package.xml
+Loading io standards from E:/Xilinx/Vivado/2014.4/data\./parts/xilinx/zynq/IOStandards.xml
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/Dropbox/Dropbox/Projects/Complex/ZedBoard/fsearch/FPGA/SearchBlock/SearchBlock.runs/synth_1/.Xil/Vivado-4028-SUPER-PC/dcp_3/axi_haystack_mem_ctrl_in_context.xdc] for cell 'axi_haystack_mem_ctrl0'
+Finished Parsing XDC File [E:/Dropbox/Dropbox/Projects/Complex/ZedBoard/fsearch/FPGA/SearchBlock/SearchBlock.runs/synth_1/.Xil/Vivado-4028-SUPER-PC/dcp_3/axi_haystack_mem_ctrl_in_context.xdc] for cell 'axi_haystack_mem_ctrl0'
+Parsing XDC File [E:/Dropbox/Dropbox/Projects/Complex/ZedBoard/fsearch/FPGA/SearchBlock/SearchBlock.runs/synth_1/.Xil/Vivado-4028-SUPER-PC/dcp_4/axi_needle_mem_ctrl_in_context.xdc] for cell 'axi_needle_mem_ctrl0'
+Finished Parsing XDC File [E:/Dropbox/Dropbox/Projects/Complex/ZedBoard/fsearch/FPGA/SearchBlock/SearchBlock.runs/synth_1/.Xil/Vivado-4028-SUPER-PC/dcp_4/axi_needle_mem_ctrl_in_context.xdc] for cell 'axi_needle_mem_ctrl0'
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.690 . Memory (MB): peak = 588.941 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:44 ; elapsed = 00:01:12 . Memory (MB): peak = 588.941 ; gain = 432.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:44 ; elapsed = 00:01:12 . Memory (MB): peak = 588.941 ; gain = 432.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:44 ; elapsed = 00:01:13 . Memory (MB): peak = 588.941 ; gain = 432.035
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3848] Net s_axi_haystack_buser in module/entity search_block does not have driver. [E:/Dropbox/Dropbox/Projects/Complex/ZedBoard/fsearch/FPGA/SearchBlock/SearchBlock.srcs/sources_1/search_block.v:75]
+WARNING: [Synth 8-3848] Net s_axi_haystack_ruser in module/entity search_block does not have driver. [E:/Dropbox/Dropbox/Projects/Complex/ZedBoard/fsearch/FPGA/SearchBlock/SearchBlock.srcs/sources_1/search_block.v:95]
+WARNING: [Synth 8-3848] Net s_axi_needle_buser in module/entity search_block does not have driver. [E:/Dropbox/Dropbox/Projects/Complex/ZedBoard/fsearch/FPGA/SearchBlock/SearchBlock.srcs/sources_1/search_block.v:123]
+WARNING: [Synth 8-3848] Net s_axi_needle_ruser in module/entity search_block does not have driver. [E:/Dropbox/Dropbox/Projects/Complex/ZedBoard/fsearch/FPGA/SearchBlock/SearchBlock.srcs/sources_1/search_block.v:143]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:45 ; elapsed = 00:01:15 . Memory (MB): peak = 588.941 ; gain = 432.035
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 5     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 14    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module search_block 
+Detailed RTL Component Info : 
+Module bitap 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 8     
+Module control_registers 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:46 ; elapsed = 00:01:16 . Memory (MB): peak = 588.941 ; gain = 432.035
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_haystack_buser[0]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_haystack_ruser[0]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_needle_buser[0]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_needle_ruser[0]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_registers_awprot[2]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_registers_awprot[1]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_registers_awprot[0]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_registers_wstrb[3]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_registers_wstrb[2]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_registers_wstrb[1]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_registers_wstrb[0]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_registers_arprot[2]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_registers_arprot[1]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_registers_arprot[0]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_haystack_awqos[3]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_haystack_awqos[2]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_haystack_awqos[1]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_haystack_awqos[0]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_haystack_awregion[3]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_haystack_awregion[2]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_haystack_awregion[1]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_haystack_awregion[0]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_haystack_awuser[0]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_haystack_wuser[0]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_haystack_arqos[3]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_haystack_arqos[2]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_haystack_arqos[1]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_haystack_arqos[0]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_haystack_arregion[3]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_haystack_arregion[2]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_haystack_arregion[1]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_haystack_arregion[0]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_haystack_aruser[0]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_needle_awqos[3]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_needle_awqos[2]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_needle_awqos[1]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_needle_awqos[0]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_needle_awregion[3]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_needle_awregion[2]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_needle_awregion[1]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_needle_awregion[0]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_needle_awuser[0]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_needle_wuser[0]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_needle_arqos[3]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_needle_arqos[2]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_needle_arqos[1]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_needle_arqos[0]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_needle_arregion[3]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_needle_arregion[2]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_needle_arregion[1]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_needle_arregion[0]
+WARNING: [Synth 8-3331] design search_block has unconnected port s_axi_needle_aruser[0]
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:01:17 . Memory (MB): peak = 588.941 ; gain = 432.035
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:46 ; elapsed = 00:01:17 . Memory (MB): peak = 588.941 ; gain = 432.035
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\control_registers0/axi_rresp_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\control_registers0/axi_bresp_reg[1] )
+WARNING: [Synth 8-3332] Sequential element (\control_registers0/control_regs_data_in_reg[31] ) is unused and will be removed from module search_block.
+WARNING: [Synth 8-3332] Sequential element (\control_registers0/control_regs_data_in_reg[30] ) is unused and will be removed from module search_block.
+WARNING: [Synth 8-3332] Sequential element (\control_registers0/control_regs_data_in_reg[29] ) is unused and will be removed from module search_block.
+WARNING: [Synth 8-3332] Sequential element (\control_registers0/control_regs_data_in_reg[28] ) is unused and will be removed from module search_block.
+WARNING: [Synth 8-3332] Sequential element (\control_registers0/control_regs_data_in_reg[27] ) is unused and will be removed from module search_block.
+WARNING: [Synth 8-3332] Sequential element (\control_registers0/control_regs_data_in_reg[26] ) is unused and will be removed from module search_block.
+WARNING: [Synth 8-3332] Sequential element (\control_registers0/control_regs_data_in_reg[25] ) is unused and will be removed from module search_block.
+WARNING: [Synth 8-3332] Sequential element (\control_registers0/control_regs_data_in_reg[24] ) is unused and will be removed from module search_block.
+WARNING: [Synth 8-3332] Sequential element (\control_registers0/control_regs_data_in_reg[23] ) is unused and will be removed from module search_block.
+WARNING: [Synth 8-3332] Sequential element (\control_registers0/control_regs_data_in_reg[22] ) is unused and will be removed from module search_block.
+WARNING: [Synth 8-3332] Sequential element (\control_registers0/control_regs_data_in_reg[21] ) is unused and will be removed from module search_block.
+WARNING: [Synth 8-3332] Sequential element (\control_registers0/control_regs_data_in_reg[20] ) is unused and will be removed from module search_block.
+WARNING: [Synth 8-3332] Sequential element (\control_registers0/control_regs_data_in_reg[19] ) is unused and will be removed from module search_block.
+WARNING: [Synth 8-3332] Sequential element (\control_registers0/control_regs_data_in_reg[18] ) is unused and will be removed from module search_block.
+WARNING: [Synth 8-3332] Sequential element (\control_registers0/control_regs_data_in_reg[17] ) is unused and will be removed from module search_block.
+WARNING: [Synth 8-3332] Sequential element (\control_registers0/control_regs_data_in_reg[16] ) is unused and will be removed from module search_block.
+WARNING: [Synth 8-3332] Sequential element (\control_registers0/control_regs_data_in_reg[15] ) is unused and will be removed from module search_block.
+WARNING: [Synth 8-3332] Sequential element (\control_registers0/control_regs_data_in_reg[14] ) is unused and will be removed from module search_block.
+WARNING: [Synth 8-3332] Sequential element (\control_registers0/control_regs_data_in_reg[13] ) is unused and will be removed from module search_block.
+WARNING: [Synth 8-3332] Sequential element (\control_registers0/control_regs_data_in_reg[12] ) is unused and will be removed from module search_block.
+WARNING: [Synth 8-3332] Sequential element (\control_registers0/control_regs_data_in_reg[11] ) is unused and will be removed from module search_block.
+WARNING: [Synth 8-3332] Sequential element (\control_registers0/control_regs_data_in_reg[10] ) is unused and will be removed from module search_block.
+WARNING: [Synth 8-3332] Sequential element (\control_registers0/control_regs_data_in_reg[9] ) is unused and will be removed from module search_block.
+WARNING: [Synth 8-3332] Sequential element (\control_registers0/control_regs_data_in_reg[8] ) is unused and will be removed from module search_block.
+WARNING: [Synth 8-3332] Sequential element (\control_registers0/control_regs_data_in_reg[7] ) is unused and will be removed from module search_block.
+WARNING: [Synth 8-3332] Sequential element (\control_registers0/control_regs_data_in_reg[6] ) is unused and will be removed from module search_block.
+WARNING: [Synth 8-3332] Sequential element (\bitap0/control_reg0_reg[31] ) is unused and will be removed from module search_block.
+WARNING: [Synth 8-3332] Sequential element (\bitap0/control_reg0_reg[30] ) is unused and will be removed from module search_block.
+WARNING: [Synth 8-3332] Sequential element (\bitap0/control_reg0_reg[29] ) is unused and will be removed from module search_block.
+WARNING: [Synth 8-3332] Sequential element (\bitap0/control_reg0_reg[28] ) is unused and will be removed from module search_block.
+WARNING: [Synth 8-3332] Sequential element (\bitap0/control_reg0_reg[27] ) is unused and will be removed from module search_block.
+WARNING: [Synth 8-3332] Sequential element (\bitap0/control_reg0_reg[26] ) is unused and will be removed from module search_block.
+WARNING: [Synth 8-3332] Sequential element (\bitap0/control_reg0_reg[25] ) is unused and will be removed from module search_block.
+WARNING: [Synth 8-3332] Sequential element (\bitap0/control_reg0_reg[24] ) is unused and will be removed from module search_block.
+WARNING: [Synth 8-3332] Sequential element (\bitap0/control_reg0_reg[23] ) is unused and will be removed from module search_block.
+WARNING: [Synth 8-3332] Sequential element (\bitap0/control_reg0_reg[22] ) is unused and will be removed from module search_block.
+WARNING: [Synth 8-3332] Sequential element (\bitap0/control_reg0_reg[21] ) is unused and will be removed from module search_block.
+WARNING: [Synth 8-3332] Sequential element (\bitap0/control_reg0_reg[20] ) is unused and will be removed from module search_block.
+WARNING: [Synth 8-3332] Sequential element (\bitap0/control_reg0_reg[19] ) is unused and will be removed from module search_block.
+WARNING: [Synth 8-3332] Sequential element (\bitap0/control_reg0_reg[18] ) is unused and will be removed from module search_block.
+WARNING: [Synth 8-3332] Sequential element (\bitap0/control_reg0_reg[17] ) is unused and will be removed from module search_block.
+WARNING: [Synth 8-3332] Sequential element (\bitap0/control_reg0_reg[16] ) is unused and will be removed from module search_block.
+WARNING: [Synth 8-3332] Sequential element (\bitap0/control_reg0_reg[15] ) is unused and will be removed from module search_block.
+WARNING: [Synth 8-3332] Sequential element (\bitap0/control_reg0_reg[14] ) is unused and will be removed from module search_block.
+WARNING: [Synth 8-3332] Sequential element (\bitap0/control_reg0_reg[13] ) is unused and will be removed from module search_block.
+WARNING: [Synth 8-3332] Sequential element (\bitap0/control_reg0_reg[12] ) is unused and will be removed from module search_block.
+WARNING: [Synth 8-3332] Sequential element (\bitap0/control_reg0_reg[11] ) is unused and will be removed from module search_block.
+WARNING: [Synth 8-3332] Sequential element (\bitap0/control_reg0_reg[10] ) is unused and will be removed from module search_block.
+WARNING: [Synth 8-3332] Sequential element (\bitap0/control_reg0_reg[9] ) is unused and will be removed from module search_block.
+WARNING: [Synth 8-3332] Sequential element (\bitap0/control_reg0_reg[8] ) is unused and will be removed from module search_block.
+WARNING: [Synth 8-3332] Sequential element (\bitap0/control_reg0_reg[7] ) is unused and will be removed from module search_block.
+WARNING: [Synth 8-3332] Sequential element (\bitap0/control_reg0_reg[6] ) is unused and will be removed from module search_block.
+WARNING: [Synth 8-3332] Sequential element (\bitap0/state_reg[31] ) is unused and will be removed from module search_block.
+WARNING: [Synth 8-3332] Sequential element (\control_registers0/axi_bresp_reg[1] ) is unused and will be removed from module search_block.
+WARNING: [Synth 8-3332] Sequential element (\control_registers0/axi_bresp_reg[0] ) is unused and will be removed from module search_block.
+WARNING: [Synth 8-3332] Sequential element (\control_registers0/axi_araddr_reg[1] ) is unused and will be removed from module search_block.
+WARNING: [Synth 8-3332] Sequential element (\control_registers0/axi_araddr_reg[0] ) is unused and will be removed from module search_block.
+WARNING: [Synth 8-3332] Sequential element (\control_registers0/axi_awaddr_reg[1] ) is unused and will be removed from module search_block.
+WARNING: [Synth 8-3332] Sequential element (\control_registers0/axi_awaddr_reg[0] ) is unused and will be removed from module search_block.
+WARNING: [Synth 8-3332] Sequential element (\control_registers0/axi_rresp_reg[1] ) is unused and will be removed from module search_block.
+WARNING: [Synth 8-3332] Sequential element (\control_registers0/axi_rresp_reg[0] ) is unused and will be removed from module search_block.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:01:21 . Memory (MB): peak = 588.941 ; gain = 432.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:01:21 . Memory (MB): peak = 588.941 ; gain = 432.035
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:48 ; elapsed = 00:01:21 . Memory (MB): peak = 588.941 ; gain = 432.035
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:48 ; elapsed = 00:01:21 . Memory (MB): peak = 588.941 ; gain = 432.035
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: Moved 2 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:15 ; elapsed = 00:01:53 . Memory (MB): peak = 588.941 ; gain = 432.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:15 ; elapsed = 00:01:53 . Memory (MB): peak = 588.941 ; gain = 432.035
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (\control_registers0/axi_awaddr_reg[2] ) is unused and will be removed from module search_block.
+WARNING: [Synth 8-3332] Sequential element (\control_registers0/control_regs_addr_reg[0] ) is unused and will be removed from module search_block.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:16 ; elapsed = 00:01:55 . Memory (MB): peak = 588.941 ; gain = 432.035
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:17 ; elapsed = 00:01:56 . Memory (MB): peak = 588.941 ; gain = 432.035
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:17 ; elapsed = 00:01:56 . Memory (MB): peak = 588.941 ; gain = 432.035
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:17 ; elapsed = 00:01:56 . Memory (MB): peak = 588.941 ; gain = 432.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------------+----------+
+|      |BlackBox name         |Instances |
++------+----------------------+----------+
+|1     |haystack_mem          |         1|
+|2     |needle_mem            |         1|
+|3     |axi_haystack_mem_ctrl |         1|
+|4     |axi_needle_mem_ctrl   |         1|
++------+----------------------+----------+
+
+Report Cell Usage: 
++------+----------------------+------+
+|      |Cell                  |Count |
++------+----------------------+------+
+|1     |axi_haystack_mem_ctrl |     1|
+|2     |axi_needle_mem_ctrl   |     1|
+|3     |haystack_mem          |     1|
+|4     |needle_mem            |     1|
+|5     |BUFG                  |     2|
+|6     |CARRY4                |    28|
+|7     |LUT1                  |    34|
+|8     |LUT2                  |   108|
+|9     |LUT3                  |    68|
+|10    |LUT4                  |    46|
+|11    |LUT5                  |    14|
+|12    |LUT6                  |    39|
+|13    |FDCE                  |    34|
+|14    |FDRE                  |    91|
+|15    |FDSE                  |    31|
+|16    |IBUF                  |   294|
+|17    |OBUF                  |   173|
+|18    |OBUFT                 |     4|
++------+----------------------+------+
+
+Report Instance Areas: 
++------+---------------------+------------------+------+
+|      |Instance             |Module            |Cells |
++------+---------------------+------------------+------+
+|1     |top                  |                  |  1308|
+|2     |  bitap0             |bitap             |   406|
+|3     |  control_registers0 |control_registers |    87|
++------+---------------------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:17 ; elapsed = 00:01:56 . Memory (MB): peak = 588.941 ; gain = 432.035
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 119 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:01:09 . Memory (MB): peak = 588.941 ; gain = 79.984
+Synthesis Optimization Complete : Time (s): cpu = 00:01:17 ; elapsed = 00:01:57 . Memory (MB): peak = 588.941 ; gain = 432.035
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 322 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+29 Infos, 167 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:17 ; elapsed = 00:01:54 . Memory (MB): peak = 588.941 ; gain = 405.973
+# write_checkpoint -noxdef search_block.dcp
+# catch { report_utilization -file search_block_utilization_synth.rpt -pb search_block_utilization_synth.pb }
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:02 . Memory (MB): peak = 588.941 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Jan 15 05:13:33 2015...

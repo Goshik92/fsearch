@@ -1,0 +1,10 @@
+OPTION psf_version = 3.0;
+
+BEGIN driver ocmcps
+
+  OPTION supported_peripherals = (ps7_ocmc);
+  OPTION supported_os_types = (DTS);
+  OPTION driver_state = ACTIVE;
+  OPTION NAME = ocmcps;
+
+END driver

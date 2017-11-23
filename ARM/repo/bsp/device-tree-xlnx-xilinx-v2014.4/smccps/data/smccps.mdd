@@ -1,0 +1,10 @@
+OPTION psf_version = 3.0;
+
+BEGIN driver smccps
+
+  OPTION supported_peripherals = (ps7_smcc);
+  OPTION supported_os_types = (DTS);
+  OPTION driver_state = ACTIVE;
+  OPTION NAME = smccps;
+
+END driver

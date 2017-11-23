@@ -1,0 +1,12 @@
+OPTION psf_version = 3.0;
+
+BEGIN driver scugic
+
+  OPTION supported_peripherals = (ps7_scugic);
+  OPTION supported_os_types = (DTS);
+  OPTION driver_state = ACTIVE;
+  OPTION NAME = scugic;
+  DTGPARAM name = num_cpus, type = int, default = 2;
+  DTGPARAM name = num_interrupts, type = int, default = 96;
+
+END driver

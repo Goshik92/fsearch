@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1456269477">
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/synth_1/constrs_in.xml"/>
+  <File Type="RDS-DCP" Name="base_zynq_design_wrapper.dcp"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/synth_1/sources.xml"/>
+  <File Type="RDS-UTIL-PB" Name="base_zynq_design_wrapper_utilization_synth.pb"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/synth_1/synth_1.psg"/>
+  <File Type="PA-TCL" Name="base_zynq_design_wrapper.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="base_zynq_design_wrapper_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="base_zynq_design_wrapper.vds"/>
+  <File Type="RDS-UTIL" Name="base_zynq_design_wrapper_utilization_synth.rpt"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="base_zynq_design_wrapper_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="base_zynq_design_wrapper_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/base_zynq_design/base_zynq_design.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/base_zynq_design/hdl/base_zynq_design_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/base_zynq_design/ip/base_zynq_design_axi_bram_ctrl_0_0/base_zynq_design_axi_bram_ctrl_0_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/base_zynq_design/ip/base_zynq_design_axi_gpio_0_0/base_zynq_design_axi_gpio_0_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/base_zynq_design/ip/base_zynq_design_blk_mem_gen_0_0/base_zynq_design_blk_mem_gen_0_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/base_zynq_design/ip/base_zynq_design_processing_system7_0_0/base_zynq_design_processing_system7_0_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/base_zynq_design/ip/base_zynq_design_processing_system7_0_axi_periph_0/base_zynq_design_processing_system7_0_axi_periph_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/base_zynq_design/ip/base_zynq_design_rst_processing_system7_0_100M_0/base_zynq_design_rst_processing_system7_0_100M_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/base_zynq_design/ip/base_zynq_design_search_block_0_1/base_zynq_design_search_block_0_1.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/base_zynq_design/ip/base_zynq_design_search_block_0_1/ip/axi_needle_mem_ctrl/axi_needle_mem_ctrl.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/base_zynq_design/ip/base_zynq_design_search_block_0_1/ip/axi_haystack_mem_ctrl/axi_haystack_mem_ctrl.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/base_zynq_design/ip/base_zynq_design_search_block_0_1/ip/needle_mem/needle_mem.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/base_zynq_design/ip/base_zynq_design_search_block_0_1/ip/haystack_mem/haystack_mem.upgrade_log"/>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="base_zynq_design_wrapper"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/base_zynq_design_wrapper.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2014"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

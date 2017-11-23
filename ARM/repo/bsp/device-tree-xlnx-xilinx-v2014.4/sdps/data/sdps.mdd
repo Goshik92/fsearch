@@ -1,0 +1,11 @@
+OPTION psf_version = 3.0;
+
+BEGIN driver sdps
+
+  OPTION supported_peripherals = (ps7_sdio);
+  OPTION supported_os_types = (DTS);
+  OPTION driver_state = ACTIVE;
+  OPTION NAME = sdps;
+  DTGPARAM name = clock-frequency , type = int ;
+
+END driver
