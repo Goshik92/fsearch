@@ -1,5 +1,5 @@
 # Description
-FastSearch is a project intended to increase speed of string searching by using the FPGA technology.
+FastSearch is a project intended to increase the speed of string searching by using the FPGA technology.
 
 # Project application
 FastSearch may be used for:
@@ -17,7 +17,7 @@ The project includes:
 Description: The bitap algorithm implemented as an IP-core
 
 ## Demo System
-[Project location](FPGA/System/), [Sources](FPGA/System/System.srcs/sources_1/bd/System), [Structure](Docs/System.pdf)  
+[Project location](FPGA/System/), [Sources](FPGA/System/System.srcs/sources_1/bd/base_zynq_design), [Structure](Docs/System.pdf)  
 Description: A Vivado project connecting the ARM core with SearchBlock.
 
 ## fsearch utility
