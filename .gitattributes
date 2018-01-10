@@ -4,4 +4,6 @@ FPGA/System/System.srcs/sources_1/bd/base_zynq_design/hdl/* linguist-generated
 FPGA/System/System.srcs/sources_1/bd/base_zynq_design/ip/* linguist-vendored
 FPGA/System/System.srcs/sources_1/bd/base_zynq_design/ipshared/* linguist-vendored
 FPGA/SearchBlock/SearchBlock.srcs/sources_1/ip/* linguist-vendored
+FPGA/SearchBlock/SearchBlock.srcs/sources_1/xgui/* linguist-generated
 Docs/* linguist-documentation
+base_zynq_design_bd.tcl linguist-generated=true
