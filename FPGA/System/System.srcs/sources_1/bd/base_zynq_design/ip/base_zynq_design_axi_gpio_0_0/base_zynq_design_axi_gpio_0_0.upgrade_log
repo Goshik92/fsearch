@@ -1,0 +1,65 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.4 (win64) Build 1412921 Wed Nov 18 09:43:45 MST 2015
+| Date         : Wed Feb 24 02:15:48 2016
+| Host         : ANON-LAPTOP running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'base_zynq_design_axi_gpio_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of base_zynq_design_axi_gpio_0_0 (xilinx.com:ip:axi_gpio:2.0) from (Rev. 6) to (Rev. 9)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading IP 'base_zynq_design_axi_gpio_0_0'. These changes may impact your design.
+
+
+-upgraded port 'gpio_io_o' width 32 differs from original width 8
+-upgrade has added port 'gpio_io_i'
+-upgrade has added port 'gpio_io_t'
+
+3. Customization warnings
+-------------------------
+
+WARNING: An attempt to modify the value of disabled parameter 'C_GPIO_WIDTH' from '32' to '8' has been ignored for IP '/axi_gpio_0'
+
+WARNING: An attempt to modify the value of disabled parameter 'C_ALL_OUTPUTS' from '0' to '1' has been ignored for IP '/axi_gpio_0'
+
+
+4. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  Please consult the warnings from the previous sections, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:ip:axi_gpio:2.0 -user_name base_zynq_design_axi_gpio_0_0
+set_property -dict "\
+  CONFIG.C_ALL_INPUTS 0 \
+  CONFIG.C_ALL_INPUTS_2 0 \
+  CONFIG.C_ALL_OUTPUTS 1 \
+  CONFIG.C_ALL_OUTPUTS_2 0 \
+  CONFIG.C_DOUT_DEFAULT 0x00000000 \
+  CONFIG.C_DOUT_DEFAULT_2 0x00000000 \
+  CONFIG.C_GPIO2_WIDTH 32 \
+  CONFIG.C_GPIO_WIDTH 8 \
+  CONFIG.C_INTERRUPT_PRESENT 0 \
+  CONFIG.C_IS_DUAL 0 \
+  CONFIG.C_TRI_DEFAULT 0xFFFFFFFF \
+  CONFIG.C_TRI_DEFAULT_2 0xFFFFFFFF \
+  CONFIG.Component_Name base_zynq_design_axi_gpio_0_0 \
+  CONFIG.GPIO2_BOARD_INTERFACE Custom \
+  CONFIG.GPIO_BOARD_INTERFACE leds_8bits \
+  CONFIG.USE_BOARD_FLOW true " [get_ips base_zynq_design_axi_gpio_0_0]
+
+

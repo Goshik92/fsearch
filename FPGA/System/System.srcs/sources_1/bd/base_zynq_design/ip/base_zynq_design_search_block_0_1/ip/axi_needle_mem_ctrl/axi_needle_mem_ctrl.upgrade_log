@@ -1,0 +1,47 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.4 (win64) Build 1412921 Wed Nov 18 09:43:45 MST 2015
+| Date         : Wed Feb 24 02:17:31 2016
+| Host         : ANON-LAPTOP running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'axi_needle_mem_ctrl'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of axi_needle_mem_ctrl (xilinx.com:ip:axi_bram_ctrl:4.0) from (Rev. 3) to (Rev. 6)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading IP 'axi_needle_mem_ctrl'.
+
+
+-upgrade has removed interface 'BRAM_PORTB'
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading IP 'axi_needle_mem_ctrl'. These changes may impact your design.
+
+
+-upgraded port 'bram_addr_a' width 12 differs from original width 15
+-upgrade has removed port 'bram_addr_b'
+-upgrade has removed port 'bram_clk_b'
+-upgrade has removed port 'bram_en_b'
+-upgrade has removed port 'bram_rddata_b'
+-upgrade has removed port 'bram_rst_b'
+-upgrade has removed port 'bram_we_b'
+-upgrade has removed port 'bram_wrdata_b'
+-upgraded port 's_axi_araddr' width 12 differs from original width 15
+-upgraded port 's_axi_awaddr' width 12 differs from original width 15
+-upgrade has added port 's_axi_arid'
+-upgrade has added port 's_axi_awid'
+-upgrade has added port 's_axi_bid'
+-upgrade has added port 's_axi_rid'
+

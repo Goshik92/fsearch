@@ -1,0 +1,42 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.4 (win64) Build 1412921 Wed Nov 18 09:43:45 MST 2015
+| Date         : Wed Feb 24 02:17:42 2016
+| Host         : ANON-LAPTOP running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'needle_mem'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of needle_mem from xilinx.com:ip:blk_mem_gen:8.2 (Rev. 3) to xilinx.com:ip:blk_mem_gen:8.3 (Rev. 1)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading IP 'needle_mem'.
+
+
+-upgrade has added interface 'BRAM_PORTB'
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading IP 'needle_mem'. These changes may impact your design.
+
+
+-upgraded port 'addra' width 8 differs from original width 4
+-upgraded port 'dina' width 32 differs from original width 16
+-upgraded port 'douta' width 32 differs from original width 16
+-upgraded port 'wea' width 4 differs from original width 1
+-upgrade has added port 'addrb'
+-upgrade has added port 'clkb'
+-upgrade has added port 'dinb'
+-upgrade has added port 'doutb'
+-upgrade has added port 'web'
+

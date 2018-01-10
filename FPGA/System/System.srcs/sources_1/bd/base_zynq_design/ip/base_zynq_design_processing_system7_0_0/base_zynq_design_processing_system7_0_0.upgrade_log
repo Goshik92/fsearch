@@ -1,0 +1,24 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.4 (win64) Build 1412921 Wed Nov 18 09:43:45 MST 2015
+| Date         : Wed Feb 24 02:16:13 2016
+| Host         : ANON-LAPTOP running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'base_zynq_design_processing_system7_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of base_zynq_design_processing_system7_0_0 (xilinx.com:ip:processing_system7:5.5) to (Rev. 3)
+
+2. Upgrade messages
+-------------------
+
+WARNING: upgrade cannot add parameter PCW_TRACE_INTERNAL_WIDTH with default value 32 : a parameter called PCW_TRACE_INTERNAL_WIDTH already exists in processing_system7_v5_5
+Added parameter PCW_USE_AXI_NONSECURE with value 0 (source 'default')
+Added parameter PCW_EN_PTP_ENET0 with value 1 (source 'default')
+WARNING: upgrade cannot add parameter PCW_EN_PTP_ENET0 with default value 1 : a parameter called PCW_EN_PTP_ENET0 already exists in processing_system7_v5_5
+
