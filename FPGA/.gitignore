@@ -1,4 +1,5 @@
 ### Vivado ###
+*.str
 *.log
 *.jou
 *.sim/
